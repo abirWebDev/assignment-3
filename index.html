@@ -20,6 +20,24 @@
     .btn-bg-color{
         background-color: #FFDC26;
     }
+
+    #jhakanaka{
+      animation: abir 2s ease-in-out  infinite ;
+    }
+    @keyframes abir{
+      0%{
+        background-color: #FFDC26;
+        scale: 1;
+      }
+      50%{
+        background-color: aqua;
+        scale: 1.2;
+      }
+      100%{
+        background-color: #FFDC26;
+        scale: 1;
+      }
+    }
     
  </style>
 
@@ -70,7 +88,7 @@
   <div class="max-w-screen-xl  mx-auto ">
 
     <!-- hero section -->
-    <section class="">
+    <section class="p-5 ">
 
       <div class=" sm:w-2/5 p-5 sm:px-0 sm:py-12 ">
         <h3 class="text-4xl sm:text-5xl font-bold sm:pr-20">
@@ -79,7 +97,7 @@
         <p class=" py-2 sm:py-8 sm:text-xl text-gray-500 font-medium ">
           Discover a world of treats, toys, and essentials handpicked for your furry friends. Shop now and make tails wag with joy!
         </p>
-        <a class="btn btn-bg-color px-6 py-0 text-lg  ">Find a Pet</a>
+        <a id="jhakanaka" class="btn btn-bg-color px-6 py-0 text-lg  ">Find a Pet</a>
       </div>
 
       <div class="relative">
@@ -174,8 +192,8 @@
 
 
 
-<section class="p-5">
-  <h3 class="text-2xl font-bold my-6">Browse By Categories</h3>
+<section class="p-5 bg-amber-50 xl:mt-20">
+  <h3 class="text-2xl  font-bold my-6">Trending Pet products</h3>
 
   <div class="lg:flex lg:gap-5">
 
@@ -363,7 +381,7 @@
 
 
 <!-- Dog-pic -->
-<section class="p-5 max-w-screen-xl mx-auto">
+<section class="p-5 max-w-screen-xl xl:mt-20  mx-auto">
   <h3 class="text-3xl font-bold my-5 ">Everyday low Price</h3>
   <!-- Wrapper  -->
   <div class="flex flex-col lg:flex-row justify-center gap-5 ">
@@ -397,21 +415,71 @@
 
 
 <!-- footer -->
-<section class="bg-gray-400 relative mt-80 ">
-  <!-- wrapper -->
-<div class="bg-red-100  rounded-xl absolute -top-[15rem]   ">
-  <div class=" mx-auto">
-    <img src="img/cute-pet-mid.png" alt="">
-  </div>
-  <div>
-    <h3>Get Pawsome News!</h3>
-    <p>Exclusive training tips, ticks, product deals and more.</p>
-    <input type="text" name="" placeholder="Enter email...." id="">
-    <a class="" href="">Subscribe</a>
-  </div>
-</div>
+<section class="pt-[1rem]  xl:mt-[20rem]    mt-[30rem]  bg-gray-200 border-none mx-auto  relative   ">
 
-<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Accusantium pariatur nisi distinctio ipsam quia aliquam aspernatur fugit itaque. Corporis harum eius error, sunt pariatur ipsum, aut enim qui quas deleniti praesentium ex aliquam, fugiat ad neque atque quaerat iusto! Fuga consectetur eius officia gggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggeaque consequuntur, asperiores ratione atque, commodi nemo assumenda, animi sequi neque velit error repudiandae. Odio nobis inventore blanditiis, perspiciatis quo, repellendus tenetur sed, at maiores quos natus harum? Voluptate sed voluptates explicabo expedita maiores saepe dolorum sunt enim ratione, ullam eligendi, totam veniam vel quidem eaque qui temporibus, ducimus similique! Dicta fuga repellendus modi rem molestias aliquid.</p>
+
+
+  <!--Dog wrapper -->
+   <div class="absolute  -top-[18rem]   w-[100%] mx-auto     ">
+
+     <div class=" max-w-screen-xl   bg-gray-50 rounded-xl   mx-5 xl:mx-auto   flex flex-col xl:flex-row xl:justify-between xl:p-20   justify-center items-center     ">
+       <div class=" ">
+         <img src="img/cute-pet-mid.png" alt="">
+       </div>
+       <div class="flex flex-col m-5 items-center xl:items-start py-10 ">
+         <h3 class="text-3xl  text-center font-bold">Get Pawsome News!</h3>
+         <p class="text-xl text-center font-medium  py-5 ">Exclusive training tips, ticks, product deals and more.</p>
+         <input class="p-5  rounded-lg w-full " type="text" name="" placeholder="Enter email...." id="">
+         <br>
+         <button class="  w-40  btn btn-primary bg-orange-300 text-black text-xl font-bold border-none  text-center ">
+          Subscribe 
+         </button>
+       </div>
+     </div>
+   </div>
+
+
+
+
+   
+
+   </div>
+
+
+
+
+   <div class=" lg:flex-row  p-5 xl:mt-[20rem] xl:pb-24   mt-[28rem]   m-5 mx-auto  max-w-screen-xl flex flex-col  gap-20 xl:justify-between  text-2xl   ">
+     <!-- left -->
+    <div class=" xl:w-1/3 ">
+      <div class="my-5 max-w-64 flex gap-5  items-center  text-black ">
+        <i class="fa-solid fa-paw text-5xl  btn-color "></i>
+        <p class="text-4xl font-medium ">Browse4Pets</p>
+      </div>
+      <p class="w-full    ">Discover a world of treats, toys, and essentials handpicked for your furry friends</p>
+    </div>
+
+    <!-- middle -->
+    <div>
+      <ul class="flex flex-col gap-3  font-medium">
+        <li>Find a pet</li>
+        <li>Breeds</li>
+        <li>Contact Us</li>
+      </ul>
+    </div>
+
+    <!-- right -->
+     <div class="mb-10 ">
+      <p >Follow Us</p>
+      <div class="flex gap-5 mt-5  ">
+        <i class="fa-brands fa-facebook"></i>
+        <i class="fa-brands fa-instagram"></i>
+        <i class="fa-brands fa-linkedin"></i>
+        <i class="fa-brands fa-youtube"></i>
+      </div>
+     </div>
+
+
+   </div>
 
 
 
